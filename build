@@ -1,0 +1,4 @@
+#!/bin/bash
+
+erlc builder.erl
+erl -s builder make_scripts

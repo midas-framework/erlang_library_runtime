@@ -18,8 +18,8 @@ import gleam/logger
 import gleam/ssl
 
 pub fn main() {
-  Ok(pid) = logger.start(config)
-  Ok(ssl) = ssl.start(config)
+  assert Ok(pid) = logger.start(config)
+  assert Ok(ssl) = ssl.start(config)
   // etc
 }
 ```
